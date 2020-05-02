@@ -1,0 +1,46 @@
+                            Requirement Document
+                            --------------------
+Name: Daily Shopping
+Member Names:
+-Faraz Ansar(CEO & Database Designer)
+-Rameez Ahmed(Senior Frontend Developer)
+-Afnan Hassan(Backend Developer)
+
+Front end:
+----------
+User:
+1-NavBar:
+  i-  home ---> index.html(search)
+  ii- login ---> login.html --> password Recovery
+  iii- Signup ---> Signup.html
+  iv- MyCard ---> MyCard.html
+  v-  checkout ---> checkout.html
+  vi- Contact ---> Contact.html
+  vii- Catagories ---> Catagories.html(search)
+  ix- Products ---> Product.html(search)
+Admin:
+  Adminindex.html
+2-Navbar:
+  i- AddCatagory
+  ii- AddAdmin
+  iii- Addproduct
+  iv- See
+      -> Catagory
+      -> Users
+      -> Product
+      -> Reviews
+   v- Activitylog ---> Activitylog.html
+
+DataBase
+--------
+Register (id,name,email,password,contact,CNIC,role)
+Catagories (cid,name)
+Products (pid,name,price,description)
+Reviews (cmid,name,email,Comment)
+Bill (bid,name,total,paybool)
+Activitylog (aid,activity,time,date)
+
+Backend:
+--------
+same as above
+
