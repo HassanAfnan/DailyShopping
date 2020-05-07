@@ -234,24 +234,7 @@ footer{
 .fadeout{
     display: none;
 }
-@media (max-width:800px)
-{   header{
-    height:250px;
-}
-   .maincontrollerspec{
-       height:60px;
-   }
-    .followus p,.contactus p,.about p{
-        font-size: 13px;
-    }
-    .contactus ul,.about ul{
-        font-size:12px;
-    }
-    footer{
-        height:200px;
-    }
-    
-}
+
 
 /* login.css work */
 .likeheaderlogin{
@@ -355,11 +338,38 @@ form.signform{
     left:-20px;
 }
 .signform input[type="text"]{
-    width:300px;
+    width:200px;
 }
 .signform input[type="password"]{
-    width:300px;
+    width:200px;
 }
 .signform input[type="email"]{
-    width:300px;
+    width:200px;
+}
+@media (max-width:700px)
+{   header{
+    height:250px;
+}
+   .maincontrollerspec{
+       height:60px;
+   }
+    .followus p,.contactus p,.about p{
+        font-size: 13px;
+    }
+    .contactus ul,.about ul{
+        font-size:12px;
+    }
+    footer{
+        height:200px;
+    }
+    /*signup .css */
+    .signform .form-row{
+        margin-right:15%;
+    }
+    .tickbox{
+        margin-left:60%;
+    }
+    .signform button[type="submit"]{
+        margin-left:13%;
+    }
 }
