@@ -6,7 +6,7 @@ body{
     font-family: 'Lato', sans-serif;
     
 }
-header{
+header.mained{
     height:500px;
     background: url("images/1527.jpg");
     background-size: 100%;
@@ -88,6 +88,10 @@ header{
         transform: translate(0px);
     }
 }
+.dropdown-menu {
+    color:white;
+    background: rgba(252, 227, 6, 0.9);
+}
 /*collapse*/
 
 .maincontrollerspec{
@@ -107,10 +111,7 @@ header{
     display: flex;
     align-items: center;
 }
-.dropdown-item:hover{
-    background: gold;
-    color:white;
-}
+
 .maincontrollerspec .titled .sp{
     font-size: 18px;
 }
@@ -146,12 +147,67 @@ h2:hover{
 .trendtitle p{
     
     font-size: 22px;
+    animation: rightshift 1s linear forwards;
+}
+.trendtitle h2{
+    animation: leftshift 1s linear forwards;
+}
+@keyframes rightshift{
+    0%{
+        transform: translateX(700px);
+    }
+    50%{
+        transform: translateX(350px);
+    }
+    80%{
+        transform: translateX(0px);
+        color:gold;
+    }
+    100%{
+        transform: translateX(0px);
+        color:black;
+    }
+}
+@keyframes leftshift{
+    0%{
+        transform: translateX(-700px);
+    }
+    40%{
+        transform: translateX(-350px);
+    }
+    80%{
+        transform: translateX(0px);
+        color: gold;
+    }
+    100%{
+        transform: translateX(0px);
+        color:black;
+    }
 }
 .thecarousel{
     margin-top:20px;
+    
+}
+.carousel-caption p{
+    font-size: 20px;
+}
+.carousel-caption:hover{
+    cursor: pointer;
+}
+.carousel-caption h1:hover{
+    color:gold;
+    transition-duration: 1s;
+    
+}
+.carousel-caption p:hover{
+    color:gold;
+    transition-duration: 1s;
+    font-size: 22px;
+    font-style: italic;
+    
 }
 footer{
-    margin-top:5%;
+    
     background :rgba(0,0,0,1);
     color:white;
     display: flex;
@@ -362,4 +418,12 @@ form.signform{
 }
 .signform input[type="email"]{
     width:300px;
+}
+
+/*clothing.html*/
+
+.clothsmain{
+    background: url("images/clothpage.jpg");
+    height:600px;
+
 }

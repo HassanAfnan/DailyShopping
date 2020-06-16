@@ -10,7 +10,7 @@
      crossorigin="anonymous"> <!--Bootstrap-->
      <link rel="stylesheet" type="text/css" href="style.css">
 <body>
-  <header>
+  <header class="mained">
     <div class="maincontroller">
       <div class="titled">
         <img src="images/vv.png" alt="cov">
@@ -18,9 +18,19 @@
       </div>
       <div class="navcont">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Mycart</a></li>
+          
+          
+          <li><div class="btn-group">
+            <button type="button" class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="Clothing.html" >Clothing</a>
+              <a class="dropdown-item" href="#">Sports</a>
+              <a class="dropdown-item" href="#">Electronic</a>
+              
+          </div></li>
+          <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
         </ul>
       </div>
@@ -68,24 +78,24 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/5.jpg" class="d-block w-100" alt="..." height="auto">
+          <img src="images/clothcov.jpg" class="d-block w-100" alt="..." height="600px">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h1>Clothing Section</h1>
+            <p>Check the latest trends available in the market</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images/2.jpg" class="d-block w-100" alt="..." height="auto">
+          <img src="images/karate.jpg" class="d-block w-100" alt="..." height="600px">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h1>Sports Library</h1>
+            <p>Become a Champion, when you browser through these latest arrivals</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images/3.jpg" class="d-block w-100" alt="..." height="auto">
+          <img src="images/carouselcover.jpg" class="d-block w-100" alt="..." height="600px">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h1>Electronic Media</h1>
+            <p>Keep up with the latest technology in our electronic library</p>
           </div>
         </div>
       </div>
