@@ -527,3 +527,158 @@ p.seconder{
         color:white;
     }
 }
+
+/*sports.html*/
+
+.sportsmain{
+    background: url("images/tennis.jpg");
+    height:600px;
+    background-size: cover;
+}
+.foranimtennis{
+    font-size: 40px;
+    font-weight: 700;
+    animation: fallingglue 1.25s linear forwards;
+}
+@keyframes fallingglue {
+    0%{
+        transform: translateY(-500px);
+        color:green;
+    }
+    40%{
+        transform: translateY(-250px);
+    }
+    80%{
+        transform: translateY(0px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+        color:white;
+        border-bottom: white 2px solid;
+    }
+
+}
+.secondertennis{
+    font-size: 30px;
+    color:white;
+    animation : fellsglue 1.25 linear forwards;
+}
+@keyframes fellsglue{
+    0%{
+        transform: translateX(0px);
+        color:lightgreen;
+    }
+    
+    100%{
+        transform: translateX(0px);
+        color:white;  
+    }
+}
+@media (max-width:700px)
+{   
+    .sportsmain{
+        background: url("images/tennis.jpg");
+        height:350px;
+        background-size: cover;
+    
+    }
+    .clothstitled{
+        height:350px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: flex-end;
+        color:white;
+    }
+    .shadowed{
+        width:200px;
+        background :rgba(0,0,0,0.3);
+        height:290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        ;
+    }
+    .clothstitled .shadowed p.foranimtennis{
+        font-size: 20px;
+        font-weight: 700;
+        animation: fallinggold 1.25s linear forwards;
+    }
+    p.secondertennis{
+        font-size: 16px;
+        color:white;
+    }
+}
+/*electronics.html*/
+.electromain{
+    background: url("images/tech2.jpg");
+    height:600px;
+    background-size: cover;
+}
+.foranimelec{
+    font-size: 40px;
+    font-weight: 700;
+    animation: fallingbolt 1.25s linear forwards;
+}
+@keyframes fallingbolt {
+    0%{
+        transform: translateY(-500px);
+        color:blue;
+    }
+    40%{
+        transform: translateY(-250px);
+    }
+    80%{
+        transform: translateY(0px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+        color:lightblue;
+        border-bottom: white 2px solid;
+    }
+
+}
+.seconderelec{
+    font-size: 24px;
+    color:lightblue;
+    text-align: center;   
+}
+@media (max-width:700px)
+{   
+    .sportsmain{
+        background: url("images/tech2.jpg");
+        height:350px;
+        background-size: cover;
+    
+    }
+    .clothstitled{
+        height:350px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: flex-end;
+        color:white;
+    }
+    .shadowed{
+        width:200px;
+        background :rgba(0,0,0,0.3);
+        height:290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        ;
+    }
+    .clothstitled .shadowed p.foranimelec{
+        font-size: 20px;
+        font-weight: 700;
+        animation: fallinggold 1.25s linear forwards;
+    }
+    p.seconderelec{
+        font-size: 16px;
+        color:white;
+    }
+}
