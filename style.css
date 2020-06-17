@@ -191,6 +191,10 @@ h2:hover{
 .carousel-caption p{
     font-size: 20px;
 }
+.carousel-caption h1 a{
+    color:white;
+    text-decoration: none;
+}
 .carousel-caption:hover{
     cursor: pointer;
 }
@@ -423,7 +427,103 @@ form.signform{
 /*clothing.html*/
 
 .clothsmain{
-    background: url("images/clothpage.jpg");
+    background: url("images/heads.jpg");
     height:600px;
+    background-size: cover;
 
+}
+.clothstitled{
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-end;
+    color:white;
+}
+.shadowed{
+    width:500px;
+    background :rgba(0,0,0,0.3);
+    height:510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    ;
+}
+.clothstitled .shadowed p.foranim{
+    font-size: 40px;
+    font-weight: 700;
+    animation: fallinggold 1.25s linear forwards;
+}
+@keyframes fallinggold {
+    0%{
+        transform: translateY(-500px);
+        color:gold;
+    }
+    40%{
+        transform: translateY(-250px);
+    }
+    80%{
+        transform: translateY(0px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+        color:white;
+        border-bottom: white 2px solid;
+    }
+
+}
+p.seconder{
+    font-size: 30px;
+    color:white;
+    animation : fells 1.25 linear forwards;
+}
+@keyframes fells{
+    0%{
+        transform: translateX(0px);
+        color:gold;
+    }
+    
+    100%{
+        transform: translateX(0px);
+        color:white;  
+    }
+}
+
+@media (max-width:700px)
+{   
+    .clothsmain{
+        background: url("images/heads.jpg");
+        height:350px;
+        background-size: cover;
+    
+    }
+    .clothstitled{
+        height:350px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: flex-end;
+        color:white;
+    }
+    .shadowed{
+        width:200px;
+        background :rgba(0,0,0,0.3);
+        height:290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        ;
+    }
+    .clothstitled .shadowed p.foranim{
+        font-size: 20px;
+        font-weight: 700;
+        animation: fallinggold 1.25s linear forwards;
+    }
+    p.seconder{
+        font-size: 16px;
+        color:white;
+    }
 }
