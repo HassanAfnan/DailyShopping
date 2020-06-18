@@ -2,6 +2,7 @@ let navcont1=document.querySelector(".maincontroller");
 let collapsed=document.querySelector(".maincontrollerspec");
 let widthhunter=this.screen.width;
 let headertext=document.querySelector("p");
+let homeredirect=document.querySelector(".titled p");
 funcmain=()=>{
     if(widthhunter<=800)
     {   collapsed.classList.remove("fadeout");
@@ -26,5 +27,9 @@ redirect=()=>{
 loginbutton.addEventListener("click",redirect);
 loginbuttonmob.addEventListener("click",redirect);
 
+// redirect text to homepage
+homeredirect.addEventListener("click",()=>{
+    this.location.href="index.html";
+})
     
 
