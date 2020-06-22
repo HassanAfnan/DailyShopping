@@ -1,0 +1,17 @@
+{
+  "name": "dailyshopping",
+  "version": "1.0.0",
+  "description": "An Ecommerce Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
