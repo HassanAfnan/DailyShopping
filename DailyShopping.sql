@@ -88,3 +88,36 @@ create table Report(
 	 TotalOrders int,
 	 timespan dateTime
 )
+
+create view loginView As
+select * from Login
+
+create view AdminView As
+select * from Admin
+
+create view UsersView As
+select * from Users
+
+create view CategoryView As
+select * from Category
+
+create view CommentsView As
+select * from Comments
+
+create view HistoryView As
+select * from History
+
+create view ReportView As
+select * from Report
+
+create view ProductView As
+select * from Product
+
+create view OrdersView As
+select * from Orders
+
+create view OrderDetailsView As
+select * from OrderDetails
+
+select * from AdminView
+select * from loginView
