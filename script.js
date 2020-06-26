@@ -1,3 +1,4 @@
+
 let navcont1=document.querySelector(".maincontroller");
 let collapsed=document.querySelector(".maincontrollerspec");
 let widthhunter=this.screen.width;
