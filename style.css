@@ -746,6 +746,24 @@ p.tea{
 .devdesc{
     text-align: center;
 }
+.logoband{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height:100px;
+}
+.logoband img{
+    width:70px;
+    height:70px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top:3%;
+}
+.techbody{
+    margin-top: 3%;
+}
 @media (max-width:700px)
 {   
     .sportsmain{
