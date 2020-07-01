@@ -647,6 +647,105 @@ p.seconder{
     color:lightblue;
     text-align: center;   
 }
+
+.Aboutus{
+    background: url("images/tdark.jpg");
+    height:700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+}
+.aboutpor{
+    height:400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutpor p.once{
+    font-size: 30px;
+    font-weight: 400;
+    color:rgb(207, 207, 207);
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    
+}
+p.onceag{
+    font-size: 40px;
+    font-weight: 400;
+    color:rgb(231, 228, 228);
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+
+}
+p.tea{
+    font-size: 30px;
+    font-weight: 400;
+    color:rgb(235, 232, 232);
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+}
+.aboutpor p:hover{
+    transition-duration: 1s;
+    color:gold;
+    cursor:pointer;
+}
+.sectionbody{
+    font-family: 'Lato', sans-serif;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.backenddev{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.titledev{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+.embedcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.devcard{
+    width:350px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+.textflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.devcard  img{
+    width:80%;
+    height:60%;
+    border-radius: 60%;
+}
+.devname{
+    font-size: 24px;
+    font-weight: bold;
+}
+.devdesc{
+    text-align: center;
+}
 @media (max-width:700px)
 {   
     .sportsmain{
@@ -670,8 +769,7 @@ p.seconder{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center
-        ;
+        align-items: center;
     }
     .clothstitled .shadowed p.foranimelec{
         font-size: 20px;
@@ -682,3 +780,6 @@ p.seconder{
         font-size: 16px;
         color:white;
     }
+}   
+    
+
