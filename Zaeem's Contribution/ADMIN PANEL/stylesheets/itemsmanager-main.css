@@ -1,0 +1,336 @@
+
+body{
+    font-family: Lato, sans-serif;
+    background-color: rgb(217, 217, 217);
+    height: 100%;
+}
+
+/*HEADER STARTS HERE*/
+.db{
+    display: block;
+    position: relative;
+    float: right;
+    bottom: 19px;
+    width: calc(100% - 232px);
+    height: 60px;
+    background-color: #eee;
+}
+
+#product-db{
+    bottom: 8px;
+}
+
+.header .db h1{
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+    letter-spacing: 0px;
+    font-weight: lighter;
+    display: inline;
+    top: 8px;
+}
+
+.header-block-nav{
+    position: relative;
+    top: 6px;
+    right: 50px;
+    width: 230px;
+    height: 60%;
+    float: right;
+    background-color: transparent;
+}
+
+.notifications-new{
+    
+    cursor: inherit;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    left:8px;
+    top: 2px;
+}
+
+.notifications-new a{
+    
+    color: rgb(255, 0, 0);
+    height: 30px;
+    width: 30px;
+}
+
+.nav-profile li{
+    display: flex;
+    align-items: center;
+    width:100%;
+    height: 51px;
+    bottom: 70px;
+    list-style: none;
+    cursor: initial;
+    color:rgba(255,255,255,0.6);
+}
+
+#bell{
+    position: relative;
+    bottom: 25px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+sup{
+    position: relative;
+    bottom: 70px;
+    left: 18px;
+}
+
+.profile-drop{
+    height: 30px;
+    width: 175px;
+    position: relative;
+    left: 55px;
+    bottom: 30px;
+    background-color: transparent;
+    cursor: initial;
+}
+
+.profile-drop div{
+    width: 175px;
+    height: 30px;
+    
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+}
+
+#face{
+    width: 30px;
+    height: 30px;
+}
+
+.name{
+    position: relative;
+    left: 50px;
+    bottom: 25px;
+    color: black;
+}
+
+.img1{
+    width: 25px !important;
+    height: 25px !important;
+    position: relative;
+    left: 125px;
+    bottom: 45px;
+    
+}
+
+#dropdown{
+    width: 10px;
+}
+
+#line{
+    position: absolute;
+    height: 93%;
+    left: 45px;
+    top: 5px;
+    width: 13px;
+}
+
+
+.counter{
+    background-color: red;
+    color: white;
+    width: 17px;
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+}
+
+
+.dropbtn {
+    background-color: transparent;
+    height: 33px;
+    width: 140px;
+    left: 10px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 6;
+    outline: none;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: transparent;
+  }
+  
+
+.dropdown-content{
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    height: 180px !important;
+    width: 167px !important;
+    background-color: white;
+    z-index: 5;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    
+}
+
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    width: 135px;
+}
+
+.show {display:block;}
+
+.logout{
+    border-top: 1px solid black;
+}
+
+.logout1{
+    position: relative;
+    left: 35px;
+}
+
+.user{
+    position: absolute;
+    width: 23px;
+}
+
+.doorbell{
+    position: absolute;
+    width: 23px;
+}
+
+.settings{
+    position: absolute;
+    width: 23px;
+}
+
+.poweroff{
+    position: absolute;
+    width: 23px;
+}
+
+
+
+
+
+
+
+
+.dropdown-content1{
+    position: absolute;
+    top: 45px;
+    left: -300px;
+    height: max-content !important;
+    width: 300px !important;
+    background-color: white;
+    z-index: 5;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    
+}
+
+.dropdown-content1 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content1 a:hover {
+    background-color: #ddd;
+    width: 268px;
+}
+
+.dropdown-content1 > p{
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.notif{
+    position: relative;
+
+}
+
+.lastnotif{
+    border-top: 1px solid black;
+    font-weight: bold;
+}
+
+.dropdown-content1 > .lastnotif:hover{
+    background-color: white;
+}
+
+.dropbtn1 {
+    background-color: transparent;
+    height: 40px;
+    width: 43px;
+    left: -55px;
+    top: 4px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 6;
+    outline: none;
+  }
+
+.dropbtn1:hover, .dropbtn:focus {
+    background-color: transparent;
+  }
+
+.show1 {display:block;}
+
+#right-arrow{
+    position: absolute;
+    width: 17px;
+    left: 270px;
+}
+
+/*HEADER ENDS HERE*/
+
+
+
+/*MAIN BODY STARTS HERE*/
+
+
+
+/*Footer*/
+footer{
+    display: block;
+    position: relative;
+    width: calc(100% - 232px);
+    height: 60px;
+    background-color:white ;
+    float: right;
+    top: 180px;
+}
+
+footer > p{
+    text-align: center;
+    font-size: 18px;
+    color: #23282c;
+}
