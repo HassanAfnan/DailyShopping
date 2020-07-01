@@ -678,6 +678,7 @@ p.onceag{
     color:rgb(231, 228, 228);
     font-family: 'Lato', sans-serif;
     text-transform: capitalize;
+    animation:leftshiftalt 1.25s forwards linear;
 
 }
 p.tea{
@@ -686,6 +687,47 @@ p.tea{
     color:rgb(235, 232, 232);
     font-family: 'Lato', sans-serif;
     text-transform: capitalize;
+    animation:rightshiftalt 1.25s forwards linear;
+}
+@keyframes rightshiftalt{
+    0%{
+        transform: translateX(700px);
+        opacity:0;
+    }
+    50%{
+        transform: translateX(350px);
+        opacity:0.5;
+    }
+    80%{
+        transform: translateX(0px);
+        color:gold;
+        opacity:0.8;
+    }
+    100%{
+        transform: translateX(0px);
+        color:white;
+        opacity:1;
+    }
+}
+@keyframes leftshiftalt{
+    0%{
+        transform: translateX(-700px);
+        opacity:0;
+    }
+    40%{
+        transform: translateX(-350px);
+        opacity:0.4;
+    }
+    80%{
+        transform: translateX(0px);
+        color: gold;
+        opacity:0.8;
+    }
+    100%{
+        transform: translateX(0px);
+        color:white;
+        opacity:1;
+    }
 }
 .aboutpor p:hover{
     transition-duration: 1s;
