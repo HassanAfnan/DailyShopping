@@ -1,2 +1,2 @@
 # DailyShopping
-Ecommerce Website based on Asp.net MVC.🛒
+Ecommerce Website based on Asp.net.🛒
