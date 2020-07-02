@@ -1,3 +1,4 @@
+
 *{
     padding:0;
     margin:0;
@@ -6,7 +7,7 @@ body{
     font-family: 'Lato', sans-serif;
     
 }
-header{
+header.mained{
     height:500px;
     background: url("images/1527.jpg");
     background-size: 100%;
@@ -88,6 +89,10 @@ header{
         transform: translate(0px);
     }
 }
+.dropdown-menu {
+    color:white;
+    background: rgba(252, 227, 6, 0.9);
+}
 /*collapse*/
 
 .maincontrollerspec{
@@ -107,10 +112,7 @@ header{
     display: flex;
     align-items: center;
 }
-.dropdown-item:hover{
-    background: gold;
-    color:white;
-}
+
 .maincontrollerspec .titled .sp{
     font-size: 18px;
 }
@@ -146,12 +148,71 @@ h2:hover{
 .trendtitle p{
     
     font-size: 22px;
+    animation: rightshift 1s linear forwards;
+}
+.trendtitle h2{
+    animation: leftshift 1s linear forwards;
+}
+@keyframes rightshift{
+    0%{
+        transform: translateX(700px);
+    }
+    50%{
+        transform: translateX(350px);
+    }
+    80%{
+        transform: translateX(0px);
+        color:gold;
+    }
+    100%{
+        transform: translateX(0px);
+        color:black;
+    }
+}
+@keyframes leftshift{
+    0%{
+        transform: translateX(-700px);
+    }
+    40%{
+        transform: translateX(-350px);
+    }
+    80%{
+        transform: translateX(0px);
+        color: gold;
+    }
+    100%{
+        transform: translateX(0px);
+        color:black;
+    }
 }
 .thecarousel{
     margin-top:20px;
+    
+}
+.carousel-caption p{
+    font-size: 20px;
+}
+.carousel-caption h1 a{
+    color:white;
+    text-decoration: none;
+}
+.carousel-caption:hover{
+    cursor: pointer;
+}
+.carousel-caption h1:hover{
+    color:gold;
+    transition-duration: 1s;
+    
+}
+.carousel-caption p:hover{
+    color:gold;
+    transition-duration: 1s;
+    font-size: 22px;
+    font-style: italic;
+    
 }
 footer{
-    margin-top:5%;
+    
     background :rgba(0,0,0,1);
     color:white;
     display: flex;
@@ -363,3 +424,422 @@ form.signform{
 .signform input[type="email"]{
     width:300px;
 }
+
+/*clothing.html*/
+
+.clothsmain{
+    background: url("images/heads.jpg");
+    height:600px;
+    background-size: cover;
+
+}
+.clothstitled{
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-end;
+    color:white;
+}
+.shadowed{
+    width:500px;
+    background :rgba(0,0,0,0.3);
+    height:510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    ;
+}
+.clothstitled .shadowed p.foranim{
+    font-size: 40px;
+    font-weight: 700;
+    animation: fallinggold 1.25s linear forwards;
+}
+@keyframes fallinggold {
+    0%{
+        transform: translateY(-500px);
+        color:gold;
+    }
+    40%{
+        transform: translateY(-250px);
+    }
+    80%{
+        transform: translateY(0px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+        color:white;
+        border-bottom: white 2px solid;
+    }
+
+}
+p.seconder{
+    font-size: 30px;
+    color:white;
+    animation : fells 1.25 linear forwards;
+}
+@keyframes fells{
+    0%{
+        transform: translateX(0px);
+        color:gold;
+    }
+    
+    100%{
+        transform: translateX(0px);
+        color:white;  
+    }
+}
+
+@media (max-width:700px)
+{   
+    .clothsmain{
+        background: url("images/heads.jpg");
+        height:350px;
+        background-size: cover;
+    
+    }
+    .clothstitled{
+        height:350px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: flex-end;
+        color:white;
+    }
+    .shadowed{
+        width:200px;
+        background :rgba(0,0,0,0.3);
+        height:290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        ;
+    }
+    .clothstitled .shadowed p.foranim{
+        font-size: 20px;
+        font-weight: 700;
+        animation: fallinggold 1.25s linear forwards;
+    }
+    p.seconder{
+        font-size: 16px;
+        color:white;
+    }
+}
+
+/*sports.html*/
+
+.sportsmain{
+    background: url("images/tennis.jpg");
+    height:600px;
+    background-size: cover;
+}
+.foranimtennis{
+    font-size: 40px;
+    font-weight: 700;
+    animation: fallingglue 1.25s linear forwards;
+}
+@keyframes fallingglue {
+    0%{
+        transform: translateY(-500px);
+        color:green;
+    }
+    40%{
+        transform: translateY(-250px);
+    }
+    80%{
+        transform: translateY(0px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+        color:white;
+        border-bottom: white 2px solid;
+    }
+
+}
+.secondertennis{
+    font-size: 30px;
+    color:white;
+    animation : fellsglue 1.25 linear forwards;
+}
+@keyframes fellsglue{
+    0%{
+        transform: translateX(0px);
+        color:lightgreen;
+    }
+    
+    100%{
+        transform: translateX(0px);
+        color:white;  
+    }
+}
+@media (max-width:700px)
+{   
+    .sportsmain{
+        background: url("images/tennis.jpg");
+        height:350px;
+        background-size: cover;
+    
+    }
+    .clothstitled{
+        height:350px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: flex-end;
+        color:white;
+    }
+    .shadowed{
+        width:200px;
+        background :rgba(0,0,0,0.3);
+        height:290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        ;
+    }
+    .clothstitled .shadowed p.foranimtennis{
+        font-size: 20px;
+        font-weight: 700;
+        animation: fallinggold 1.25s linear forwards;
+    }
+    p.secondertennis{
+        font-size: 16px;
+        color:white;
+    }
+}
+/*electronics.html*/
+.electromain{
+    background: url("images/tech2.jpg");
+    height:600px;
+    background-size: cover;
+}
+.foranimelec{
+    font-size: 40px;
+    font-weight: 700;
+    animation: fallingbolt 1.25s linear forwards;
+}
+@keyframes fallingbolt {
+    0%{
+        transform: translateY(-500px);
+        color:blue;
+    }
+    40%{
+        transform: translateY(-250px);
+    }
+    80%{
+        transform: translateY(0px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+        color:lightblue;
+        border-bottom: white 2px solid;
+    }
+
+}
+.seconderelec{
+    font-size: 24px;
+    color:lightblue;
+    text-align: center;   
+}
+
+.Aboutus{
+    background: url("images/tdark.jpg");
+    height:700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+}
+.aboutpor{
+    height:400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutpor p.once{
+    font-size: 30px;
+    font-weight: 400;
+    color:rgb(207, 207, 207);
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    
+}
+p.onceag{
+    font-size: 40px;
+    font-weight: 400;
+    color:rgb(231, 228, 228);
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    animation:leftshiftalt 1.25s forwards linear;
+
+}
+p.tea{
+    font-size: 30px;
+    font-weight: 400;
+    color:rgb(235, 232, 232);
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    animation:rightshiftalt 1.25s forwards linear;
+}
+@keyframes rightshiftalt{
+    0%{
+        transform: translateX(700px);
+        opacity:0;
+    }
+    50%{
+        transform: translateX(350px);
+        opacity:0.5;
+    }
+    80%{
+        transform: translateX(0px);
+        color:gold;
+        opacity:0.8;
+    }
+    100%{
+        transform: translateX(0px);
+        color:white;
+        opacity:1;
+    }
+}
+@keyframes leftshiftalt{
+    0%{
+        transform: translateX(-700px);
+        opacity:0;
+    }
+    40%{
+        transform: translateX(-350px);
+        opacity:0.4;
+    }
+    80%{
+        transform: translateX(0px);
+        color: gold;
+        opacity:0.8;
+    }
+    100%{
+        transform: translateX(0px);
+        color:white;
+        opacity:1;
+    }
+}
+.aboutpor p:hover{
+    transition-duration: 1s;
+    color:gold;
+    cursor:pointer;
+}
+.sectionbody{
+    font-family: 'Lato', sans-serif;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.backenddev{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.titledev{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+.embedcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.devcard{
+    width:350px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+.textflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.devcard  img{
+    width:80%;
+    height:60%;
+    border-radius: 60%;
+}
+.devname{
+    font-size: 24px;
+    font-weight: bold;
+}
+.devdesc{
+    text-align: center;
+}
+.logoband{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height:100px;
+}
+.logoband img{
+    width:70px;
+    height:70px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top:3%;
+}
+.techbody{
+    margin-top: 3%;
+}
+@media (max-width:700px)
+{   
+    .sportsmain{
+        background: url("images/tech2.jpg");
+        height:350px;
+        background-size: cover;
+    
+    }
+    .clothstitled{
+        height:350px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: flex-end;
+        color:white;
+    }
+    .shadowed{
+        width:200px;
+        background :rgba(0,0,0,0.3);
+        height:290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .clothstitled .shadowed p.foranimelec{
+        font-size: 20px;
+        font-weight: 700;
+        animation: fallinggold 1.25s linear forwards;
+    }
+    p.seconderelec{
+        font-size: 16px;
+        color:white;
+    }
+}   
+    
+
