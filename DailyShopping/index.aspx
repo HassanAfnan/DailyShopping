@@ -39,8 +39,8 @@
           <li><a href="">Contact</a></li>
         </ul>
       </div>
-      <div class="logs">
-        <button type="button" class="logined btn btn-outline-warning">Login</button>
+      <div class="logs">        
+        <a href="Login.aspx" class="logined btn btn-outline-warning">Login</a>
       </div>
       </div>
       <!--collapsed div for mobile-->
