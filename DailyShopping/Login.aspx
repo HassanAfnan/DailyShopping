@@ -13,12 +13,12 @@
      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
      <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
-<body>
+<body style=" background-image: url('images/logins/logincov.jpg');  background-repeat: no-repeat;   background-size: cover;">
     <form id="form1" runat="server">
        <div class="likeheaderlogin">
         <div class="maincontroller">
           <div class="titled">
-            <img src="../images/vv.png" alt="cov">
+            <img src="images/vv.png" alt="cov"/>
             <p>DailyShopping</p>
           </div>
           <div class="navcont">
@@ -28,6 +28,7 @@
                 <button type="button" class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Categories
                 </button>
+                  </div>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="Clothing.html" >Clothing</a>
                   <a class="dropdown-item" href="Sports.html">Sports</a>
@@ -35,7 +36,7 @@
                   
               </div></li>
               <li><a href="About.html">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a>Contact</a></li>
             </ul>
           </div>
           <div class="logs">
@@ -58,7 +59,7 @@
               </div>
             </div>
           <div class="titled">
-            <img src="../images/vv.png" alt="cov">
+            <img src="images/vv.png" alt="cov"/>
             <p class="sp">DailyShopping</p>
           </div>  
           <div class="logs">
@@ -66,28 +67,29 @@
           </div>
           <!--collapse ends-->
         </div>
-        <div class="formmain">  
-            
+        <div class="formmain">
+            <div class="replacements">
                 <div class="mainup">
                 <div class="form-group row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control"/>
                     </div>
                 </div>
                 <div class="form-group row">
                   <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
                   <div class="col-sm-10">
-                    <input type="password" class="form-control" />
+                    <input type="password" class="form-control"/>
                   </div>
                 </div>
             </div>
               <div class="lowup">
                   <button class="btn btn-outline-success">Log in</button>
-                  <p><a href="signup.html">New Member? Sign in</a></p>
-              </div>              
-              
+                  <p><a href="signup.aspx">New Member? Sign in</a></p>
+              </div>
+            </div>        
     </div>
+    </div>  
     </form>
     <script type="text/JavaScript" src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
