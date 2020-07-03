@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Aboutus.aspx" />
     <Content Include="css\style.css" />
     <Content Include="Global.asax" />
     <Content Include="images\1.jpg" />
@@ -107,6 +108,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aboutus.aspx.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aboutus.aspx.designer.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
