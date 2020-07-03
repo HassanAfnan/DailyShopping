@@ -23,14 +23,15 @@
 
 .sidebar-header{
     width: 240px;
-    height: 70px;
+    height: 59px;
     text-align: center;
     border-bottom: 1px solid rgba(255,255,255,.15);
 }
 
+
 .sidebar-header #admin{
     position: absolute;
-    width: 50px;
+    width: 40px;
     left: 30px;
     top: 5px;
     pointer-events: none;
@@ -44,15 +45,15 @@
     margin: 0;
     position: relative;
     top: 20px;
-    left: 30px;
+    left: 6px;
     display: inline;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .menu{
     width: 240px;
     height: 510px;
-    
+    margin-top: 50px;
 }
 
 ul{
@@ -80,6 +81,7 @@ a{
     height: 51px;
     position: relative;
     top: 15px;
+    transition: 0.3s;
 }
 
 .sidebar-menu li{
@@ -95,4 +97,5 @@ a{
 
 .sidebar-menu li a:hover{
     color:rgba(255,255,255,1);
+    transition: 0.3s;
 }
