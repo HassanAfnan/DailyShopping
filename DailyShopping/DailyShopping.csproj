@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Aboutus.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="css\ContactStyle.css" />
     <Content Include="css\style.css" />
     <Content Include="Global.asax" />
     <Content Include="images\1.jpg" />
@@ -114,6 +116,13 @@
     </Compile>
     <Compile Include="Aboutus.aspx.designer.cs">
       <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

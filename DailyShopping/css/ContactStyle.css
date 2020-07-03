@@ -1,0 +1,92 @@
+﻿body {
+}
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#contact-section {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url("https://raw.githubusercontent.com/muhammadfaraz6640/FrontEnd-for-Tutors-Academy-Website/master/Tutors/Images/contact.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(../Images/contact.jpg); */
+    height: 100%;
+    width: 100%;
+}
+p.teas {
+    color: yellow;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    animation: leftshiftalt 1.25s forwards linear;
+}
+p.teass {
+    margin-top: 20%;
+    color: yellow;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    animation: leftshiftalt 1.25s forwards linear;
+}
+.location{
+    text-align:center;
+    align-items : center;
+    color : orangered;
+}
+#contact-section .container h2 {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.contact-form i.fa {
+    font-size: 20px;
+    background-color: none;
+    padding: 3%;
+    margin: 2%;
+    border: 2px solid rgb(190,190,190);
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+}
+
+.form-info {
+    color: white;
+    padding-left: 5px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 65%;
+    background-color: rgba(136,133,133,0.5);
+    border-radius: 5%;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px;
+    width: 65%;
+    background-color: rgba(136,133,133,0.5);
+    border-radius: 5%;
+    color: white;
+}
+
+.submit {
+    width: 40%;
+    margin-left: 10%;
+    height: 43px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}

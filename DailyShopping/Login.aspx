@@ -35,8 +35,8 @@
                   <a class="dropdown-item" href="Electronics.html">Electronic</a>
                   
               </div></li>
-              <li><a href="About.html">About</a></li>
-              <li><a>Contact</a></li>
+            <li><a href="Aboutus.aspx">About</a></li>
+              <li><a href="Contact.aspx">Contact</a></li>
             </ul>
           </div>
           <div class="logs">
