@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PRODUCT</title>
         <link rel="icon" href="">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="stylesheets/product-sidebar.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/product-main.css">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -32,6 +33,10 @@
                 <li class="active"><a href="Product.html">Product</a></li>
             </ul>
         
+
+            <div class="sidebar-footer">
+                <img src="picture/mainicon.png" id="mainicon"/>
+            </div>
         </nav>
 
     </div>
@@ -158,7 +163,16 @@
             <select id="productcategory" name="productcategory">
                 <option value="Electronics">Electronics</option>
                 <option value="Clothes">Clothes</option>
+                <option value="Clothes">Sports</option>
+                <option value="Clothes">Garments</option>
+                <option value="Clothes">Food</option>
+                <option value="Clothes">Accessories</option>
             </select>
+<br><br>
+<br><br>
+            <h2 style="text-align: center;">Enter password to confirm changes</h2>
+
+            <input type="password" name="password" id="password" required>
 
             <div class="product-image">
                 <h2>Product Image</h2>
@@ -173,7 +187,8 @@
             
 
             <div class="container">
-                <button class="butn butn1">SUBMIT DETAILS</button>
+                <button class="butn butn1" type="submit">SUBMIT DETAILS</button>
+                <button class="butnA butn1A" type="reset">RESET</button>
             </div>
 
         </form>
@@ -187,6 +202,11 @@
 <!--FOOTER STARTS HERE-->
 <footer>
     <p>Copyrights © DailyShopping, created in 2020</p>
+    <button class="btnScrollToTop">
+        <img src="picture/uparrow.png" id="uparrow"/>
+    </button>
+
+    <script src="scripts/scrolltop.js"></script>
 </footer>
 <!--FOOTER ENDS HERE-->
 
