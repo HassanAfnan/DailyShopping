@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ITEMS MANAGER</title>
         <link rel="icon" href="">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="stylesheets/itemsmanager-sidebar.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/itemsmanager-main.css">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-
     
         <link rel="icon" href="picture/admin.png">
 
@@ -19,129 +19,290 @@
 
 <!--SIDEBAR STARTS-->
     <section class="sidebar">
-        <div class="sidebar-container">
+        <div class="sidebar-header">
+            <img src="picture/admin.png" id="admin"/>
+            <h4>ADMIN</h4>
+        </div>
 
-            <div class="sidebar-header">
-                <img src="picture/admin.png" id="admin"/>
-                <h4>ADMIN</h4>
-            </div>
 
-            <nav class="menu">
-                
-                <ul class="sidebar-menu">
-                    <li><a href="Dashboard.html">Dashboard</a></li>
-                    <li class="active"><a href="Items Manager.html">Items Manager</a></li>
-                    <li><a href="Category.html">Category</a></li>
-                    <li><a href="Product.html">Product</a></li>
-                </ul>
-            
-            </nav>
+        <div class="sidebar-menu">
+            <a href="Dashboard.html" class="menu-items">Dashboard</a>
+            <a href="#" class="menu-items active">Items Manager</a>
+            <a href="Category.html" class="menu-items">Category</a>
+            <a href="Product.html" class="menu-items">Product</a>
+        </div>
 
+
+        <div class="sidebar-footer">
+            <img src="picture/mainicon.png" id="mainicon"/>
         </div>
     </section>
 <!--SIDEBAR ENDS-->
 
 
-<!--DASHBOARD HEADING STARTS-->
-<section class="header">
-    <section class="db" id="product-db">
-        <h1>Items Manager</h1>
+    <section class="header">
+        <div style="flex:0.178; background-color: burlywood;"></div>
 
-        <div class="header-block-nav">
-            <img id="line" src="picture/line.png"/>
-            <ul class="nav-profile">
-                <li class="notifications-new">
-                    <a href="#">
-                        <img id="bell" src="picture/Bell.png"/>
-                        <sup>
-                            <span class="counter">3</span>
-                        </sup>
-                    </a>
-                </li>
+        <div class="db">
+            <h1>Items Manager</h1>
+        </div>
 
-                <li class="profile-drop">
-                    <div class="newdiv">
-                        <button onclick="myFunction()" class="dropbtn"></button>
+        <div class="prof">
+            
+            <div class="header-block-nav">
+                <div class="notifications-list">
+                    <img id="bell" src="picture/Bell.png"/>
+                    <p class="counter">3</p>
+                    <button onclick="myFunction1()" class="dropbtn1"></button>
+                    <script type="text/javascript" src="scripts/dropdown1.js"></script>
+
+
+
+
+
+                    
+                    <div id="myDropdown1" class="dropdown-content1">
+                        <p>You have New Notifications</p>
                         
-                        <script type="text/javascript" src="scripts/dropdown.js"></script>
-                                                           
-                                <div class="img">
-                                    <img id="face" src="picture/face.jpg"/>
-                                </div>
-                                <span class="name">John Doe</span>
-                        
-                                <div class="img1">
-                                    <img id="dropdown" src="picture/dropdown-arrow.png"/>
-                                </div>
+                        <a href="#">
+                            
+                            <span class="notif">The profile of X person is changed specifically password has been changed.</span></a>
+                
+                
+                        <a href="#">   
+                            <span class="notif">A new member has been added in admin panel control</span></a>
+                
+                
+                        <a href="#"> 
+                            <span class="notif">Settings of the various members of this website has been granted to admin</span></a>
+                
+                            
+                        <a href="#" class="lastnotif">  
+                            <span class="notif">See All Notifications</span>
+                            <img src="picture/right-arrow.png" id="right-arrow"/>
+                        </a>                             
+                    </div>
 
 
 
 
 
 
-                                <button onclick="myFunction1()" class="dropbtn1"></button>
-                                <script type="text/javascript" src="scripts/dropdown1.js"></script>
-                                <div id="myDropdown1" class="dropdown-content1">
-                                    <p>You have New Notifications</p>
-                                    
-                                    <a href="#">
-                                        
-                                        <span class="notif">The profile of X person is changed specifically password has been changed.</span></a>
 
+                </div>
 
-                                    <a href="#">   
-                                        <span class="notif">A new member has been added in admin panel control</span></a>
-
-
-                                    <a href="#"> 
-                                        <span class="notif">Settings of the various members of this website has been granted to admin</span></a>
-
-                                        
-                                    <a href="#" class="lastnotif">  
-                                        <span class="notif">See All Notifications</span>
-                                        <img src="picture/right-arrow.png" id="right-arrow"/>
-                                    </a>                             
-                                </div>
-
-
-
-
-
-
-                       
-                                <div id="myDropdown" class="dropdown-content">
-                                    <a href="#">
-                                        <img src="picture/user.png" class="user"/>
-                                        <span class="logout1">Profile</span></a>
-                                    <a href="#">
-                                        <img src="picture/doorbell.png" class="doorbell"/>
-                                        <span class="logout1">Notifications</span></a>
-                                    <a href="#">
-                                        <img src="picture/settings.png" class="settings"/>
-                                        <span class="logout1">Settings</span></a>
-                                    <a href="#" class="logout">
-                                        <img src="picture/poweroff.png" class="poweroff"/>
-                                        <span class="logout1">Logout</span></a>
-                                </div>
+                <div class="profile-drop">
+                    <button onclick="myFunction()" class="dropbtn"></button>
+                    <script type="text/javascript" src="scripts/dropdown.js"></script>
+                    <div class="facesec">
+                        <div class="face">
+                            <img id="face" src="picture/face.jpg"/>
                         </div>
+                    </div>
 
-                </li>
-            </ul>
+                    <div class="namesec">
+                        <p class="name">John Doe</p>
+                    </div>
+
+                    <div class="btnsec">
+                        <img id="dropdown" src="picture/dropdown-arrow.png"/>
+                    </div>
+
+
+
+
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">
+                            <img src="picture/user.png" class="user"/>
+                            <span class="logout1">Profile</span></a>
+                        <a href="#">
+                            <img src="picture/doorbell.png" class="doorbell"/>
+                            <span class="logout1">Notifications</span></a>
+                        <a href="#">
+                            <img src="picture/settings.png" class="settings"/>
+                            <span class="logout1">Settings</span></a>
+                        <a href="#" class="logout">
+                            <img src="picture/poweroff.png" class="poweroff"/>
+                            <span class="logout1">Logout</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mainbody">
+        <h2>Select Category</h2>
+
+        <select id="categories">
+            <option>Electronics</option>
+            <option>Clothes</option>
+            <option>Sports</option>
+            <option>Accessories</option>
+            <option>Garments</option>
+            <option>Food</option>
+        </select>
+
+
+        <div class="tablediv">
+            <div class="items-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Item Name</th>
+                            <th>Price</th>
+                            <th>Sales</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6</td>
+                            <td>40,000</td>
+                            <td>35</td>
+                            <td>
+                                <button class="delete">
+                                    DELETE
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>2</td>
+                            <td>Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6</td>
+                            <td>40,000</td>
+                            <td>35</td>
+                            <td>
+                                <button class="delete">
+                                    DELETE
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>3</td>
+                            <td>Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6</td>
+                            <td>40,000</td>
+                            <td>35</td>
+                            <td>
+                                <button class="delete">
+                                    DELETE
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>4</td>
+                            <td>Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6</td>
+                            <td>40,000</td>
+                            <td>35</td>
+                            <td>
+                                <button class="delete">
+                                    DELETE
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>5</td>
+                            <td>Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6</td>
+                            <td>40,000</td>
+                            <td>35</td>
+                            <td>
+                                <button class="delete">
+                                    DELETE
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6</td>
+                            <td>40,000</td>
+                            <td>35</td>
+                            <td>
+                                <button class="delete">
+                                    DELETE
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6</td>
+                            <td>40,000</td>
+                            <td>35</td>
+                            <td>
+                                <button class="delete">
+                                    DELETE
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6</td>
+                            <td>40,000</td>
+                            <td>35</td>
+                            <td>
+                                <button class="delete">
+                                    DELETE
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td>Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6</td>
+                            <td>40,000</td>
+                            <td>35</td>
+                            <td>
+                                <button class="delete">
+                                    DELETE
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6 Samsung Galaxy S6</td>
+                            <td>40,000</td>
+                            <td>35</td>
+                            <td>
+                                <button class="delete">
+                                    DELETE
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+            </div>
         </div>
     </section>
 
 
-</section>
-<!--DASHBOARD HEADING ENDS-->
+    <footer class="footer">
+        <div style="flex:0.178;"></div>
+        <div style="flex:0.822; text-align:center;">
+            <p>Copyrights © DailyShopping, created in 2020</p>
 
+            <button class="btnScrollToTop">
+                <img src="picture/uparrow.png" id="uparrow"/>
+            </button>
 
+            <script src="scripts/scrolltop.js"></script>
+        </div>
 
+        
+            
+       
+    </footer>
 
-<!--FOOTER STARTS HERE-->
-<footer>
-    <p>Copyrights © DailyShopping, created in 2020</p>
-</footer>
-<!--FOOTER ENDS HERE-->
-
+    
     </body>
 </html>

@@ -26,9 +26,10 @@ body{
     left: 20px;
     bottom: 20px;
     letter-spacing: 0px;
-    font-weight: lighter;
+    font-weight: 400;
     display: inline;
     top: 8px;
+    font-family: Roboto;
 }
 
 .header-block-nav{
@@ -325,7 +326,7 @@ sup{
 /*Form*/
 .form{
     width: 1000px;
-    height: 1000px;
+    height: 1150px;
     position: relative;
     background-color: white;
     left: 270px;
@@ -335,7 +336,7 @@ sup{
 
 #productform{
     width: 1000px;
-    height: 930px;
+    height: 1060px;
     position: relative;
 }
 
@@ -358,7 +359,7 @@ sup{
 
 #formdetails{
     width: 900px;
-    height: 855px;
+    height: 1020px;
     position: relative;
     left: 50px;
     top: 30px;
@@ -419,12 +420,20 @@ sup{
     position: absolute;
 }
 
+#password{
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    font-size: 24px;
+    left: 315px;
+}
+
 .product-image{
     position: absolute;
     width: 450px;
     height: 550px;
     left: 450px;
-    bottom: 305px;
+    bottom: 455px;
 }
 
 
@@ -524,6 +533,57 @@ sup{
 }
 
 
+
+
+.butnA{
+    border: 2px solid #1a81c5;
+    background: none;
+    padding: 30px 70px;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.butn1A{
+    color: #1a81c5;
+}
+
+.butn1A:hover{
+    color: #fff;
+}
+
+.butnA::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #1a81c5;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: 0.4s;
+}
+
+.butn1A::before{
+    width: 0;
+    height: 100%;
+}
+
+.butn1A:hover::before{
+    width: 100%;
+}
+
+.butn1A:focus{
+    outline: 0px solid #1a81c5;
+    border-radius: 5px;
+}
+
+
 /*Footer*/
 footer{
     display: block;
@@ -533,13 +593,49 @@ footer{
     background-color:white ;
     float: right;
     top: 180px;
+    text-align: center;
 }
 
 footer > p{
-    text-align: center;
+    display: inline;
     font-size: 18px;
     color: #23282c;
 }
+
+.btnScrollToTop {
+     
+    position: relative; 
+    top: 5px;
+    left: 300px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #f1c40f;
+    color: black; 
+    cursor: pointer; 
+    padding: 10px; 
+    transition: 0.5s;
+    font-size: 18px;
+    height: 50px;
+}
+  
+.btnScrollToTop:hover {
+    background-color: #f39c12; 
+    transition: 0.5s;
+}
+
+.btnScrollToTop:active{
+
+}
+
+#uparrow{
+    height: 30px;
+}
+
+
+
+
+
 
 #productname:focus{
     outline: 3px solid #3498db;
@@ -559,5 +655,9 @@ footer > p{
 }
 
 #productcategory:focus{
+    outline: 3px solid #3498db;
+}
+
+#password:focus{
     outline: 3px solid #3498db;
 }
