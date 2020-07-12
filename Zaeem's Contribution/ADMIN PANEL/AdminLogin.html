@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/AdminLogin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="picture/admin.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+</head>
+
+<body>
+    <h1 class="h1">ADMIN PANEL</h1>
+    <div class="login">
+        <div class="tab">
+            <div class="log-in">
+                <button class="toggle" id="a" onclick="login()">LOGIN</button>
+            </div>
+            <div class="sign-up">
+                <button class="toggle" id="b" onclick="register()">REGISTER</button>
+            </div>
+        </div>
+
+        <form method="post" action="" id="logform">
+            <div class="textb">
+            <input type="text" name="username" required autocomplete="off">
+            <div class="placeholder">Username</div>
+        </div>
+
+
+        <div class="textb">
+            <input type="password" name="password" required autocomplete="off">
+            <div class="placeholder">Password</div>
+            <div class="show-password fas fa-eye-slash"></div>
+        </div>
+
+        <button class="loginbtn fas fa-arrow-right"></button>
+
+        <p class="para">Want to create another account? <br><a href="#" id="signupclick" onclick="register()">REGISTER HERE</a></p>
+        </form>
+
+
+
+
+
+        
+        <form method="post" action="" id="regform">
+            <div class="textb1">
+            <input type="text" name="email" required autocomplete="off">
+            <div class="placeholder1">E-mail</div>
+        </div>
+
+
+        <form method="post" action="" id="regform">
+            <div class="textb1">
+            <input type="text" name="username" required autocomplete="off">
+            <div class="placeholder1">Username</div>
+        </div>
+
+
+        <div class="textb1">
+            <input type="password" name="password" required autocomplete="off">
+            <div class="placeholder1">Password</div>
+            <div class="show-password1 fas fa-eye-slash"></div>
+        </div>
+
+        <button class="regbtn fas fa-arrow-right"></button>
+
+        <p class="para1">Already have an account? <br><a href="#" id="loginclick" onclick="login()">Login Here</a></p>
+        </form>
+
+
+    </div>
+
+
+<script>
+    var fields = document.querySelectorAll(".textb input");
+
+    var btn = document.querySelector(".loginbtn");
+    function check(){
+      if(fields[0].value != "" && fields[1].value != "")
+        btn.disabled = false;
+      else
+        btn.disabled = true;  
+    }
+
+    fields[0].addEventListener("keyup",check);
+    fields[1].addEventListener("keyup",check);
+
+    document.querySelector(".show-password").addEventListener("click", function(){
+        if(this.classList[2] == "fa-eye-slash"){
+            this.classList.remove("fa-eye-slash");
+            this.classList.add("fa-eye");
+            fields[1].type="text";
+        }
+        else{
+            this.classList.remove("fa-eye");
+            this.classList.add("fa-eye-slash");
+            fields[1].type="password";
+        }
+    });
+</script>
+
+
+
+
+
+<script>
+    var fields = document.querySelectorAll(".textb1 input");
+
+    var btn = document.querySelector(".regbtn");
+    function check(){
+      if(fields[0].value != "" && fields[1].value != "")
+        btn.disabled = false;
+      else
+        btn.disabled = true;  
+    }
+
+    fields[0].addEventListener("keyup",check);
+    fields[1].addEventListener("keyup",check);
+
+    document.querySelector(".show-password1").addEventListener("click", function(){
+        if(this.classList[2] == "fa-eye-slash"){
+            this.classList.remove("fa-eye-slash");
+            this.classList.add("fa-eye");
+            fields[1].type="text";
+        }
+        else{
+            this.classList.remove("fa-eye");
+            this.classList.add("fa-eye-slash");
+            fields[1].type="password";
+        }
+    });
+</script>
+
+
+
+
+
+<script>
+    var x = document.getElementById("a");
+    var y = document.getElementById("b");
+    var z = document.getElementById("logform");
+    var a = document.getElementById("regform");
+
+    function register(){
+        z.style.display = "none";
+        a.style.display = "block";
+        y.style.backgroundColor= "#bc252a";
+        y.style.color="white";
+        x.style.backgroundColor="transparent";
+        x.style.color="black";
+    }
+
+    function login(){
+        a.style.display = "none";
+        z.style.display = "block";
+        x.style.backgroundColor= "#bc252a";
+        x.style.color="white";
+        y.style.backgroundColor="transparent";
+        y.style.color="black";
+    }
+</script>
+    
+</body>
+
+</html>
