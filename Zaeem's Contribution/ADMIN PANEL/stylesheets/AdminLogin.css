@@ -1,0 +1,290 @@
+*{
+    font-family: Lato, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(217, 217, 217);
+    font-family: Lato, sans-serif;
+}
+
+.login{
+    width: 450px;
+    height: 500px;
+    background-color:white;
+    position: relative;
+    left: 450px;
+    top: 55px;
+    box-shadow: 7px 5px 8px 8px silver;
+}
+
+.tab{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.log-in{
+    flex: 0.5;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.sign-up{
+    flex: 0.5;
+    border-bottom: 1px solid black;
+}
+
+.toggle{
+    height: 100%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+#a{
+    background-color: #bc252a;
+    color: white;
+}
+
+#b{
+    background-color: transparent;
+}
+
+#b:hover{
+    background-color: #bc252a;
+    transition: 0.3s;
+    color: white;
+}
+
+#a:focus,#b:focus{
+    outline: none;
+}
+
+.sign-up{
+    text-align: center;
+}
+
+#logform{
+    width: 90%;
+    height: 70%;
+    position: relative;
+    left: 5%;
+    top: 8%;
+    z-index: 2;
+}
+
+.textb{
+    margin-bottom: 12px;
+    position: relative;
+    top: 30px;
+}
+
+.textb > input{
+    width: 80%;
+    height: 70px;
+    border: none;
+    background-color: rgb(217, 217, 217);
+    position: relative;
+    left: 7.5%;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 15px;
+    color: #333;
+    
+}
+
+.placeholder{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 70px;
+    left: 55px;
+    top: 0px;
+    color: #9d9d9d;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.loginbtn{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    left: 165px;
+    top: 30px;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    border-radius: 10px;
+}
+.loginbtn:hover{
+    background-color: #bc252a;
+    transition: 0.3s;
+    color: white;
+}
+
+.loginbtn:focus{
+    outline: none;
+}
+
+
+.textb input:focus + .placeholder,
+.textb input:valid + .placeholder{
+    top: -20px;
+    left: 45px;
+    transition: 0.3s;
+}
+
+.para{
+    position: relative;
+    text-align: center;
+    top: 60px;
+    margin:0;
+}
+
+#signupclick{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 500;
+    transition: 0.2s linear;
+    font-weight: 900;
+}
+
+#signupclick:hover{
+    color: #111;
+}
+
+
+
+.show-password{
+    position: absolute;
+    line-height: 70px !important;
+    color: #9d9d9d;
+    font-size: 22px;
+    right: 50px;
+    cursor: pointer;
+}
+
+
+#regform{
+    width: 90%;
+    height: 75%;
+    position: absolute;
+    left: 23px;
+    top: 110px;
+    display: none;
+}
+
+
+
+.textb1{
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.textb1 > input{
+    width: 80%;
+    height: 70px;
+    border: none;
+    background-color: rgb(217, 217, 217);
+    position: relative;
+    left: 7.5%;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 15px;
+    color: #333;
+    
+}
+
+.placeholder1{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 70px;
+    left: 55px;
+    top: 0px;
+    color: #9d9d9d;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+
+.regbtn{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    left: 165px;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    border-radius: 10px;
+}
+.regbtn:hover{
+    background-color: #bc252a;
+    transition: 0.3s;
+    color: white;
+}
+
+.regbtn:focus{
+    border-radius: 10px;
+    outline: none;
+}
+
+.textb1 input:focus + .placeholder1,
+.textb1 input:valid + .placeholder1{
+    top: -20px;
+    left: 45px;
+    transition: 0.3s;
+}
+
+
+.show-password1{
+    position: absolute;
+    line-height: 70px !important;
+    color: #9d9d9d;
+    font-size: 22px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.para1{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    top: 15px;
+}
+
+
+#loginclick{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 500;
+    transition: 0.2s linear;
+    font-weight: 900;
+}
+
+#loginclick:hover{
+    color: #111;
+}
+
+.h1{
+    margin:0;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
