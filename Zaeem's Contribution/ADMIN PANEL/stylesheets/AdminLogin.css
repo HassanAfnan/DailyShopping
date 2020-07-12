@@ -136,6 +136,8 @@ body{
 }
 
 
+
+
 .textb input:focus + .placeholder,
 .textb input:valid + .placeholder{
     top: -20px;
