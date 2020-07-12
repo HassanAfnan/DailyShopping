@@ -15,6 +15,8 @@
 
 <body>
     <h1 class="h1">ADMIN PANEL</h1>
+
+    
     <div class="login">
         <div class="tab">
             <div class="log-in">
@@ -25,6 +27,8 @@
             </div>
         </div>
 
+
+        <!--LOGIN FORM-->
         <form method="post" action="" id="logform">
             <div class="textb">
             <input type="text" name="username" required autocomplete="off">
@@ -38,7 +42,7 @@
             <div class="show-password fas fa-eye-slash"></div>
         </div>
 
-        <button class="loginbtn fas fa-arrow-right"></button>
+        <button class="loginbtn fas fa-arrow-right" disabled></button>
 
         <p class="para">Want to create another account? <br><a href="#" id="signupclick" onclick="register()">REGISTER HERE</a></p>
         </form>
@@ -47,7 +51,7 @@
 
 
 
-        
+        <!--SIGNUP FORM-->
         <form method="post" action="" id="regform">
             <div class="textb1">
             <input type="text" name="email" required autocomplete="off">
@@ -68,7 +72,7 @@
             <div class="show-password1 fas fa-eye-slash"></div>
         </div>
 
-        <button class="regbtn fas fa-arrow-right"></button>
+        <button class="regbtn fas fa-arrow-right" disabled></button>
 
         <p class="para1">Already have an account? <br><a href="#" id="loginclick" onclick="login()">Login Here</a></p>
         </form>
@@ -76,7 +80,7 @@
 
     </div>
 
-
+<!--LOGIN FORM SCRIPT-->
 <script>
     var fields = document.querySelectorAll(".textb input");
 
@@ -108,31 +112,32 @@
 
 
 
-
+<!--SIGNUP FORM SCRIPT-->
 <script>
-    var fields = document.querySelectorAll(".textb1 input");
+    var fields1 = document.querySelectorAll(".textb1 input");
 
-    var btn = document.querySelector(".regbtn");
+    var btn1 = document.querySelector(".regbtn");
     function check(){
-      if(fields[0].value != "" && fields[1].value != "")
-        btn.disabled = false;
+      if(fields1[0].value != "" && fields1[1].value != "" && fields1[2].value!="")
+        btn1.disabled = false;
       else
-        btn.disabled = true;  
+        btn1.disabled = true;  
     }
 
-    fields[0].addEventListener("keyup",check);
-    fields[1].addEventListener("keyup",check);
+    fields1[0].addEventListener("keyup",check);
+    fields1[1].addEventListener("keyup",check);
+    fields1[2].addEventListener("keyup",check);
 
     document.querySelector(".show-password1").addEventListener("click", function(){
         if(this.classList[2] == "fa-eye-slash"){
             this.classList.remove("fa-eye-slash");
             this.classList.add("fa-eye");
-            fields[1].type="text";
+            fields1[1].type="text";
         }
         else{
             this.classList.remove("fa-eye");
             this.classList.add("fa-eye-slash");
-            fields[1].type="password";
+            fields1[1].type="password";
         }
     });
 </script>
@@ -140,7 +145,7 @@
 
 
 
-
+<!--ONCLICK EVENTS-->
 <script>
     var x = document.getElementById("a");
     var y = document.getElementById("b");
