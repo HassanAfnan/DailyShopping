@@ -5,106 +5,88 @@ body{
     height: 100%;
 }
 
-/*HEADER STARTS HERE*/
-.db{
-    display: block;
-    position: relative;
-    float: right;
-    bottom: 19px;
-    width: calc(100% - 232px);
+/*MAIN BODY STARTS HERE*/
+
+
+/*Header*/
+.header{
     height: 60px;
     background-color: #eee;
+    display: flex;
 }
 
-#product-db{
-    bottom: 8px;
+.db{
+    flex: 0.55;
 }
 
-.header .db h1{
+.db > h1{
+    display: inline;
+    margin-block-start: 0;
+    margin-block-end: 0;
     font-size: 30px;
     position: relative;
-    left: 20px;
-    bottom: 20px;
-    letter-spacing: 0px;
-    font-weight: lighter;
-    display: inline;
     top: 8px;
+    font-weight: 400;
+    font-family: Roboto;
+    left: 20px;
 }
+
+.prof{
+    flex: 0.272;
+}
+
+
 
 .header-block-nav{
-    position: relative;
-    top: 6px;
-    right: 50px;
+    margin: 0;
     width: 230px;
-    height: 60%;
-    float: right;
-    background-color: transparent;
-}
-
-.notifications-new{
-    
-    cursor: inherit;
-    width: 40px;
-    height: 20px;
-    position: relative;
-    left:8px;
-    top: 2px;
-}
-
-.notifications-new a{
-    
-    color: rgb(255, 0, 0);
-    height: 30px;
-    width: 30px;
-    cursor: initial;
-}
-
-.nav-profile li{
+    height: 50px;
+    padding-top: 5px;
+    padding-left: 80px;
     display: flex;
-    align-items: center;
-    width:100%;
-    height: 51px;
-    bottom: 70px;
-    list-style: none;
-    cursor: initial;
-    color:rgba(255,255,255,0.6);
+}
+
+.notifications-list{
+    flex: 0.23;
+    border-right: 1.4px solid black;
 }
 
 #bell{
-    position: relative;
-    bottom: 25px;
-    right: 7px;
     width: 35px;
     height: 34px;
+    position: relative;
+    top: 5px;
 }
 
-sup{
+.counter{
+    color: white;
     position: relative;
-    bottom: 70px;
-    left: 18px;
+    background-color: red;
+    border-radius: 10px;
+    width: 17px;
+    text-align: center;
+    margin: 0;
+    left: 25px;
+    bottom: 40px;
+    font-size: smaller;
 }
 
 .profile-drop{
-    height: 30px;
-    width: 175px;
-    position: relative;
-    left: 55px;
-    bottom: 30px;
-    background-color: transparent;
-    cursor: initial;
+    flex: 0.77;
+    display: flex;
 }
 
-.profile-drop div{
-    width: 175px;
-    height: 30px;
-    
+
+.facesec{
+    flex: 0.25;
 }
 
-.img{
+.face{
+    height: 30px;
     width: 30px;
-    height: 30px;
-    position: relative;
-    left: 10px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 #face{
@@ -112,50 +94,112 @@ sup{
     height: 30px;
 }
 
-.name{
-    position: relative;
-    left: 50px;
-    bottom: 25px;
-    color: black;
+.namesec{
+    flex: 0.45;
+    text-align: center;
 }
 
-.img1{
-    width: 25px !important;
-    height: 25px !important;
-    position: relative;
-    left: 125px;
-    bottom: 45px;
-    
+.name{
+
+}
+
+.btnsec{
+    flex: 0.3;
 }
 
 #dropdown{
     width: 10px;
+    margin-top: 20px;
+    margin-left: 2px;
 }
 
-#line{
-    position: absolute;
-    height: 93%;
-    left: 45px;
-    top: 5px;
-    width: 13px;
+.dropbtn1{
+    position: relative;
+    cursor: pointer;
+    height: 42px;
+    width: 40px;
+    left: 3px;
+    bottom: 56px;
+    background-color: transparent;
+    border: none;
+}
+
+.dropbtn1:focus{
+    outline: none;
 }
 
 
-.counter{
-    background-color: red;
-    color: white;
-    width: 17px;
-    border-radius: 10px;
+
+
+.dropdown-content1{
     position: absolute;
+    top: 48px;
+    left: 815px;
+    height: max-content !important;
+    width: 300px !important;
+    background-color: white;
+    z-index: 5;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    
+}
+
+.dropdown-content1 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+}
+
+.dropdown-content1 a:hover {
+    background-color: #ddd;
+    transition: 0.5s;
+}
+
+.dropdown-content1 > p{
+    color: black;
     text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    font-weight: bold;
 }
+
+.notif{
+    position: relative;
+
+}
+
+.lastnotif{
+    border-top: 1px solid black;
+    font-weight: bold;
+}
+
+.dropdown-content1 > .lastnotif:hover{
+    background-color: white;
+}
+
+.show1 {display:block;}
+
+#right-arrow{
+    position: absolute;
+    width: 17px;
+    left: 270px;
+}
+
+
+
+
+
 
 
 .dropbtn {
     background-color: transparent;
     height: 33px;
     width: 140px;
-    left: 10px;
+    left: 1120px;
+    top: 12px;
     color: white;
     font-size: 16px;
     border: none;
@@ -172,8 +216,8 @@ sup{
 
 .dropdown-content{
     position: absolute;
-    top: 45px;
-    left: 0px;
+    top: 48px;
+    left: 1116px;
     height: 180px !important;
     width: 167px !important;
     background-color: white;
@@ -231,109 +275,224 @@ sup{
 
 
 
-
-
-
-
-
-.dropdown-content1{
-    position: absolute;
-    top: 45px;
-    left: -300px;
-    height: max-content !important;
-    width: 300px !important;
+/*Section*/
+.mainbody{
+    width: 1020px;
+    height: 700px;
     background-color: white;
-    z-index: 5;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    display: none;
+    margin-left: 278px;
+    margin-top: 50px;
+    box-shadow: 8px 2px 8px 10px silver;
+}
+
+.mainbody > h2{
+    display: inline;
+    position: relative;
+    top: 30px;
+    left: 45px;
+}
+
+#categories{
+    width: 250px;
+    height: 30px;
+    font-family: Lato;
+    font-size: 16px;
+    position: relative;
+    top: 70px;
+    right: 127px;
+}
+
+#categories:focus{
+    outline: 3px solid #3498db;
+}
+
+
+
+/*Table*/
+.tablediv{
+    width: 100%;
+    height: 568px;
+    position: relative;
+    top: 100px;
+}
+
+.items-table{
+    width: 900px;
+    height: 450px;
+    border: 2px solid black;
+    position: relative;
+    left: 60px;
+    top: 60px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.table{
+    width: 880px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table > thead > tr{
+    height: 50px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    color: white;
+    background-color: black;
+}
+
+.table > thead > tr > th{
+    border-bottom: 1px solid black;
+    font-weight: 900;
+}
+
+.table > tbody > tr{
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
     
 }
 
-.dropdown-content1 a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: 0.5s;
-}
-
-.dropdown-content1 a:hover {
-    background-color: #ddd;
-    width: 268px;
-    transition: 0.5s;
-}
-
-.dropdown-content1 > p{
-    color: black;
-    text-align: center;
+.table > tbody > tr > td{
     border-bottom: 1px solid black;
-    padding-bottom: 15px;
-    margin-bottom: 0;
-    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.notif{
-    position: relative;
-
-}
-
-.lastnotif{
-    border-top: 1px solid black;
-    font-weight: bold;
-}
-
-.dropdown-content1 > .lastnotif:hover{
-    background-color: white;
-}
-
-.dropbtn1 {
-    background-color: transparent;
-    height: 45px;
-    width: 43px;
-    left: -55px;
-    top: -2px;
-    color: white;
-    font-size: 16px;
-    border: none;
+.delete{
+    width: 100px;
+    height: 30px;
+    background-color: red;
     cursor: pointer;
-    position: absolute;
-    z-index: 6;
-    outline: none;
-  }
-
-.dropbtn1:hover, .dropbtn:focus {
-    background-color: transparent;
-  }
-
-.show1 {display:block;}
-
-#right-arrow{
-    position: absolute;
-    width: 17px;
-    left: 270px;
+    color: white;
+    font-weight: 900;
+    border: none;
+    transition: 0.3s;
 }
 
-/*HEADER ENDS HERE*/
+.delete:focus{
+   outline-style: solid;
+}
+
+.delete:hover{
+    background-color: rgba(231, 24, 24, 0.986);
+    transition: 0.3s;
+}
 
 
 
-/*MAIN BODY STARTS HERE*/
+.table th:nth-of-type(1){
+    width: 42px;
+   
+}
+
+.table th:nth-of-type(2){
+    width: 489px;
+}
+.table th:nth-of-type(3){
+    width: 110px;
+}
+.table th:nth-of-type(4){
+    width: 79px;
+}
+.table th:nth-of-type(5){
+    width: 150px;
+}
+
+
+
+.table td:nth-of-type(1){
+    width: 42px;
+    border-right: 1px solid black;
+}
+
+.table td:nth-of-type(2){
+    width: 489px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid black;
+}
+.table td:nth-of-type(3){
+    width: 110px;
+    border-right: 1px solid black;
+}
+.table td:nth-of-type(4){
+    width: 79px;
+    border-right: 1px solid black;
+}
+.table td:nth-of-type(5){
+    width: 150px;
+    border-right: 1px solid black;
+}
+
+
+/* width */
+.items-table::-webkit-scrollbar {
+    width: 19px;
+  }
+  
+  /* Track */
+  .items-table::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .items-table::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .items-table::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 
 
 /*Footer*/
-footer{
-    display: block;
-    position: relative;
-    width: calc(100% - 232px);
+.footer{
     height: 60px;
     background-color:white ;
-    float: right;
-    top: 180px;
+    margin-top: 100px;
+    display: flex;
 }
 
-footer > p{
-    text-align: center;
+
+footer > div > p{
     font-size: 18px;
     color: #23282c;
+    padding-top: 20px;
+    margin: 0;
+    display: inline;
+    position: relative;
+}
+
+.btnScrollToTop {
+     
+    position: relative; 
+    top: 5px;
+    left: 300px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #f1c40f;
+    color: black; 
+    cursor: pointer; 
+    padding: 10px; 
+    transition: 0.5s;
+    font-size: 18px;
+    height: 50px;
+}
+  
+.btnScrollToTop:hover {
+    background-color: #f39c12; 
+    transition: 0.5s;
+}
+
+.btnScrollToTop:active{
+
+}
+
+#uparrow{
+    height: 30px;
 }
