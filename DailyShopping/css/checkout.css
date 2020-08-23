@@ -1,0 +1,142 @@
+﻿.wholepage {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+tr {
+    background: linear-gradient(to right,gold,lightyellow,gold);
+    border-bottom: 1px solid black;
+    margin-bottom: 2%;
+}
+
+.headerfinal {
+    height: 80px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.headerfinal p:hover{
+    transition-duration:1s;
+    color:gold;
+    cursor:pointer;
+}
+
+.lastgames1 {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border:2px solid gold;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+footer {
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.layeralpha {
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
+
+.alphacontact, .betalinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 180px;
+    width: 20%;
+    align-items: flex-start;
+}
+
+.betalinks {
+    margin-left: 10%;
+}
+
+.superlayer {
+    font-size: 24px;
+    color: gray;
+}
+
+.childlayer p:hover {
+    cursor: pointer;
+}
+
+.childlayer {
+    font-size: 20px;
+    color: white;
+}
+
+.layerbeta {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.followtrends {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyrighted1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media (max-width:700px) {
+    footer{
+        height:300px;
+    }
+    .superlayer {
+        font-size: 18px;
+        color: gray;
+    }
+
+    .childlayer {
+        font-size: 14px;
+        color: white;
+    }
+}
+.followtrends img:hover {
+    cursor: pointer;
+}
+
+
+
+.imholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.fadeout {
+    display: none;
+}

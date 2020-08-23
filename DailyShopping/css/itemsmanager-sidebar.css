@@ -1,0 +1,86 @@
+.sidebar{
+    width: 240px;
+    background-color: rgb(35, 40, 44);
+    margin: 0;
+    position: fixed;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+.sidebar-header{
+    width: 100%;
+    height: 59px;
+    margin-bottom: 65px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.sidebar-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 236px;
+}
+
+
+.sidebar-menu > a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.sidebar-menu > a:hover{
+    color: rgba(255,255,255,1);
+    transition: 0.3s;
+}
+
+
+.menu-items{
+    color: white;
+    font-size: 16px;
+    height: 51px;
+}
+
+.active{
+    color: rgba(255,255,255,1) !important;
+}
+
+.sidebar-footer{
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid rgba(255,255,255,.15);
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+}
+
+.mainicon{
+    width: 200px;
+    padding: 5px 0;
+}
+
+.sidebar-header > .admin{
+    width: 40px;
+    position: relative;
+    left: 30px;
+    pointer-events: none;
+    top: 5px;
+}
+
+.sidebar-header > h4{
+    position: relative;
+    margin:0;
+    display: inline;
+    letter-spacing: 0.4em;
+    font-weight: bolder;
+    cursor: default;
+    font-size: 16px;
+    color: white;
+    left: 39px;
+    bottom: 4px;
+}

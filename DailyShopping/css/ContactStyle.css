@@ -71,7 +71,40 @@ input {
 ::placeholder {
     color: white;
 }
+#contact-section {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url("Images/contact.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    /* height:auto; */
+    /* background-image: url(../Images/contact.jpg); */
+    height: 100%;
+    width: 100%;
+}
 
+html, body {
+    overflow-x: hidden
+}
+
+#contact-section .container h2 {
+    text-align: center;
+    color: white;
+    margin-right: 5%;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 480px) {
+    .cols {
+        margin-top: 400px;
+        left: -470px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .cols {
+        margin-top: 400px;
+        left: -470px;
+    }
+}
 textarea {
     padding: 10px;
     margin: 10px;

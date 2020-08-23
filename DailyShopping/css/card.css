@@ -1,0 +1,82 @@
+
+.card{
+    height:475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    margin-top: 2%;
+    border : 2px solid gold;
+    margin-right: 3%;
+    margin-bottom: 2%;
+    
+}
+.card .descs{
+    width: 100%;
+}
+.card .prices{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width:200px;
+    align-items: center;
+}
+.descs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.card img{
+    width:225px;
+    height:200px;
+}
+.card .name{
+    font-size: 24px;
+    font-weight: 700;
+}
+.card .leftprice{
+    display: flex;
+    flex-direction: row;
+    width:100px;
+    justify-content: space-around;
+}
+.card .category ,.card .leftprice{
+    font-size: 18px;
+    font-weight: 600;
+}
+.card img:hover{
+    cursor: pointer;
+    transform: scale(1.075);
+    transition-duration: 1s;
+}
+.card .descs:hover{
+    animation :golded 4s infinite linear;
+}
+@keyframes golded{
+    0%{
+        color:black;
+    }
+    33%{
+        color:rgb(146, 130, 38);
+    }
+    66%{
+        color:rgb(143, 127, 36);
+    }
+    100%{
+        color:black;
+    }
+}
+.prices{
+    
+    display: flex;
+    flex-direction: row;
+    width:200px;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    margin-top: -5%;
+}

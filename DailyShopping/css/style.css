@@ -9,12 +9,12 @@ body {
 
 header.mained {
     height: 500px;
-    background: url("images/1527.jpg");
+    background: url("../images/1527.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.maincontroller {
+/*.maincontroller {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -108,7 +108,7 @@ header.mained {
     color: white;
     background: rgba(252, 227, 6, 0.9);
 }
-/*collapse*/
+---------------------------------------------
 
 .maincontrollerspec {
     display: flex;
@@ -137,7 +137,115 @@ header.mained {
     .maincontrollerspec .titled img {
         height: 30px;
         width: 50px;
+    }*/
+.maincontroller {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90px;
+    background: rgba(0,0,0,0.7);
+}
+
+.titled {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+
+    .titled img {
+        width: 80px;
+        height: 70px;
+        margin-top: -4%;
+        animation: cartanim 2s linear;
     }
+
+    .titled p {
+        font-size: 28px;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        color: rgb(255, 254, 246);
+        font-style: italic;
+    }
+
+        .titled p:hover {
+            color: gold;
+            transition-duration: 1.5s;
+            cursor: pointer;
+        }
+
+.navcont {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dropdown-menu {
+    color: black;
+    background: white;
+}
+
+.dropdown-item {
+    color: black;
+}
+
+.navcont a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+    .navcont a:hover {
+        color: gold;
+        border-bottom: 2px solid gold;
+        text-decoration: none;
+    }
+a.dropdown-item {
+    color: black;
+}
+.logs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 16%;
+}
+
+.maincontrollerspec {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+}
+
+    .maincontrollerspec .btn-group {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+.sss1 {
+    width: 40px;
+}
+
+.maincontrollerspec .titledmob {
+    width: 30%;
+}
+
+.titledmob p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 254, 246);
+    font-style: italic;
+}
 
 .btn-group button {
     height: 40px;
@@ -176,6 +284,13 @@ h2 {
 
 .trendtitle h2 {
     animation: leftshift 1s linear forwards;
+}
+.workit{
+    color:orange;
+}
+.workit:hover{
+    color:black;
+    text-decoration:none;
 }
 
 @keyframes rightshift {
@@ -248,90 +363,98 @@ h2 {
 }
 
 footer {
-    background: rgba(0,0,0,1);
-    color: white;
-    display: flex;
-    flex-direction: row;
-    height: 200px;
-}
-
-.followus, .about, .contactus {
+    height: 300px;
+    background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 }
 
-    .about p {
-        font-size: 22px;
-        font-weight: 600;
-    }
+.layeralpha {
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
 
-    .about ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 35%;
-        text-align: center;
-    }
+.alphacontact, .betalinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 180px;
+    width: 20%;
+    align-items: flex-start;
+}
 
-        .about ul li a {
-            color: gold;
-        }
+.betalinks {
+    margin-left: 10%;
+}
 
-    .contactus ul li a {
-        color: gold;
-    }
+.superlayer {
+    font-size: 24px;
+    color: gray;
+}
 
-.about, .contactus {
+.childlayer p:hover {
+    cursor: pointer;
+}
+
+.childlayer {
+    font-size: 20px;
+    color: white;
+}
+
+.layerbeta {
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-right: 5%;
 }
 
-    .contactus p {
-        font-size: 24px;
-        font-weight: 600;
-    }
-
-    .contactus ul {
-        height: 35%;
-        text-align: center;
-    }
-
-.followus {
+.followtrends {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 2%;
-    flex: 1;
 }
 
-.about, .followus, .contactus {
-    flex: 1;
+.copyrighted1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-    .about ul {
-        list-style: none;
+@media (max-width:700px) {
+    footer{
+        height:300px;
+    }
+    .superlayer {
+        font-size: 16px;
+        color: gray;
     }
 
-    .contactus ul {
-        list-style: none;
+    .childlayer {
+        font-size: 12px;
+        color: white;
     }
+}
 
-    .followus img {
-        width: 25px;
-        height: 25px;
-        border-radius: 40%;
-    }
+.followtrends img:hover {
+    cursor: pointer;
+}
 
-    .followus p {
-        font-weight: 600;
-        font-size: 24px;
-        margin-top: -3%;
-    }
+.fadeout {
+    display: none;
+}
+
+
 
 .imholder {
     display: flex;
@@ -362,9 +485,6 @@ footer {
         font-size: 12px;
     }
 
-    footer {
-        height: 200px;
-    }
 }
 
 /* login.css work */
@@ -445,7 +565,7 @@ footer {
     justify-content: center;
     background: none;
     color: white;
-    margin-top: 10%;
+    margin-top: 5%;
     height: 700px;
 }
 
@@ -455,7 +575,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 700px;
-    height: 700px;
+    height: 800px;
     background-color: rgba(0,0,0,0.7);
 }
 
@@ -904,6 +1024,34 @@ p.tea {
 
 .techbody {
     margin-top: 3%;
+}
+
+tr{
+    background: linear-gradient(to right,gold, lightyellow,gold);
+}
+.finalcss{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    height:120px;
+    border: 1px solid gray;
+    background:lightyellow;
+}
+.upfinal{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    height:70px;
+    width:35%;
+}
+.ugo {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    height:70px;
 }
 
 @media (max-width:700px) {
