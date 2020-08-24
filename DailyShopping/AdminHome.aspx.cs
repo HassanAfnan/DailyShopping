@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -16,10 +17,13 @@ namespace DailyShopping
                 Response.Redirect("Login.aspx");
             }
             else
-            {
-                //Label1.Text = "welcome user " + Session["userinfo"].ToString();
-                Button2.Visible = false;
+            {                
+                Models.Admin ad = new Models.Admin();
+                string em = Session["AdminInfo"].ToString();
+                string returned_name = ad.GetAdminName(em);
+                Label1.Text = returned_name;
             }
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -28,9 +32,6 @@ namespace DailyShopping
             Response.Redirect("Login.aspx");
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Login.aspx");
-        }
+        
     }
 }

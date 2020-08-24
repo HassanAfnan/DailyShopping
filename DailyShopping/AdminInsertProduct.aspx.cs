@@ -23,7 +23,10 @@ namespace DailyShopping
             }
             else
             {
-                //Label1.Text = "welcome user " + Session["userinfo"].ToString();                
+                Models.Admin ad = new Models.Admin();
+                string em = Session["AdminInfo"].ToString();
+                string returned_name = ad.GetAdminName(em);
+                Label2.Text = returned_name;
             }
         }
         Models.Categories cat = new Models.Categories();

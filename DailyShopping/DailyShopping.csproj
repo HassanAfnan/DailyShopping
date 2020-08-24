@@ -32,6 +32,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+    <IncludeIisSettings>false</IncludeIisSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -68,13 +70,52 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Aboutus.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="AdminInsertCategory.aspx" />
+    <Content Include="AdminInsertProduct.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminSeeAllProducts.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="css\AdminLogin.css" />
+    <Content Include="css\card.css" />
+    <Content Include="css\category-main.css" />
+    <Content Include="css\category-sidebar.css" />
     <Content Include="css\ContactStyle.css" />
+    <Content Include="css\itemsmanager-main.css" />
+    <Content Include="css\itemsmanager-sidebar.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\product-main.css" />
+    <Content Include="css\product-sidebar.css" />
+    <Content Include="css\productdetail.css" />
+    <Content Include="css\sidebar.css" />
     <Content Include="css\style.css" />
+    <Content Include="Details.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\1.jpg" />
     <Content Include="images\1527.jpg" />
     <Content Include="images\5.jpg" />
+    <Content Include="images\Admin\admin.png" />
+    <Content Include="images\Admin\bell.png" />
+    <Content Include="images\Admin\chart.png" />
+    <Content Include="images\Admin\dashboard.png" />
+    <Content Include="images\Admin\dollar.png" />
+    <Content Include="images\Admin\dollar1.png" />
+    <Content Include="images\Admin\doorbell.png" />
+    <Content Include="images\Admin\dropdown-arrow.png" />
+    <Content Include="images\Admin\face.jpg" />
+    <Content Include="images\Admin\home.png" />
+    <Content Include="images\Admin\line.png" />
+    <Content Include="images\Admin\mainicon.png" />
+    <Content Include="images\Admin\notepad.png" />
+    <Content Include="images\Admin\poweroff.png" />
+    <Content Include="images\Admin\right-arrow.png" />
+    <Content Include="images\Admin\rocket.png" />
+    <Content Include="images\Admin\sample.txt" />
+    <Content Include="images\Admin\settings.png" />
+    <Content Include="images\Admin\shopcart.png" />
+    <Content Include="images\Admin\uparrow.png" />
+    <Content Include="images\Admin\user.png" />
+    <Content Include="images\Admin\users.png" />
     <Content Include="images\bsa.png" />
     <Content Include="images\bsa1.png" />
     <Content Include="images\carouselcover.jpg" />
@@ -94,6 +135,8 @@
     <Content Include="images\karate.jpg" />
     <Content Include="images\lo1.png" />
     <Content Include="images\logins\logincov.jpg" />
+    <Content Include="images\newmob.png" />
+    <Content Include="images\sg.jpg" />
     <Content Include="images\sqla.jpg" />
     <Content Include="images\sqla1.png" />
     <Content Include="images\tdark.jpg" />
@@ -103,10 +146,18 @@
     <Content Include="images\tennis.jpg" />
     <Content Include="images\titlelogo.png" />
     <Content Include="images\vv.png" />
+    <Content Include="images\wall.jpg" />
     <Content Include="index.aspx" />
+    <Content Include="js\dropdown.js" />
+    <Content Include="js\dropdown1.js" />
+    <Content Include="js\graph.js" />
     <Content Include="js\script.js" />
+    <Content Include="js\scrolltop.js" />
     <Content Include="Login.aspx" />
+    <Content Include="pic\sg.jpg" />
+    <Content Include="ShowCategoryWise.aspx" />
     <Content Include="signup.aspx" />
+    <Content Include="ViewCart.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -117,12 +168,54 @@
     <Compile Include="Aboutus.aspx.designer.cs">
       <DependentUpon>Aboutus.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInsertCategory.aspx.cs">
+      <DependentUpon>AdminInsertCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminInsertCategory.aspx.designer.cs">
+      <DependentUpon>AdminInsertCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInsertProduct.aspx.cs">
+      <DependentUpon>AdminInsertProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminInsertProduct.aspx.designer.cs">
+      <DependentUpon>AdminInsertProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSeeAllProducts.aspx.cs">
+      <DependentUpon>AdminSeeAllProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSeeAllProducts.aspx.designer.cs">
+      <DependentUpon>AdminSeeAllProducts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -141,13 +234,35 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Categories.cs" />
+    <Compile Include="Models\ClearTextBox.cs" />
+    <Compile Include="Models\Connection.cs" />
+    <Compile Include="Models\ICrud.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Products.cs" />
+    <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowCategoryWise.aspx.cs">
+      <DependentUpon>ShowCategoryWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowCategoryWise.aspx.designer.cs">
+      <DependentUpon>ShowCategoryWise.aspx</DependentUpon>
+    </Compile>
     <Compile Include="signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCart.aspx.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCart.aspx.designer.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -162,7 +277,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="images\Products\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

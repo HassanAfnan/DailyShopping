@@ -12,8 +12,9 @@
     <title>Details</title>
 </head>
 <body>
+     
     <form id="form1" runat="server">
-       <div class="reshader" style="background: url(images/wall.jpg);"> <!--ye alag se style lagaya he only for wallpaper-->
+    <div class="reshader" style="background: url(images/wall.jpg);"> <!--ye alag se style lagaya he only for wallpaper-->
     <div class="detailoproduct">                                    <!--kyunke asp detect nhi karta css mein url-->
         <div class="leftportionpro">
             <div class="imgcontainers">
@@ -41,7 +42,7 @@
                     </div> 
                 </div>
                 <div class="lowerrightside">
-                    <button class="btn-success">Add to Cart</button>
+                    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click"/>
                 </div>
             </div>
         </div>

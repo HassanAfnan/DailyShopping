@@ -29,15 +29,20 @@
         <nav class="menu">
             
             <ul class="sidebar-menu">
-                <li><a href="AdminHome.aspx">Dashboard</a></li>
-                <li><a href="Items Manager.html">Items Manager</a></li>
-                <li><a href="Category.html">Category</a></li>
-                <li class="active"><a href="AdminInsertProduct.aspx">Product</a></li>
-            </ul>
+                    <li>
+                        
+                        <a href="AdminHome.aspx">Dashboard</a>
+                    </li>
+                    <li><a href="AdminSeeAllProducts.aspx">Items Manager</a></li>
+                    
+                    <li><a href="AdminInsertCategory.aspx">Category</a></li>
+                    <li class="active"><a href="AdminInsertProduct.aspx">Product</a></li>
+                    <li><a href="AdminLogin.aspx">Admin Register</a></li>
+                </ul>
         
 
             <div class="sidebar-footer">
-                <img src="images/Admin/mainicon.png" id="mainicon"/>
+                <img src="images/Admin/mainicon.png" class="mainicon"/>
             </div>
         </nav>
 
@@ -65,14 +70,15 @@
 
                 <li class="profile-drop">
                     <div class="newdiv">
-                        <button onclick="myFunction()" class="dropbtn"></button>
+                        <input type="button" class="dropbtn" onclick="myFunction()"/>
+                        <%--<button onclick="myFunction()" class="dropbtn"></button>--%>
                         
                         <script type="text/javascript" src="js/dropdown.js"></script>
                                                            
-                                <div class="img">
-                                    <img id="face" src="images/Admin/face.jpg"/>
-                                </div>
-                                <span class="name">John Doe</span>
+                                   <div class="img">
+                                    <img id="face" src="images/Admin/admin.png"/>
+                                </div> 
+                             <asp:Label ID="Label2" runat="server" class="name"></asp:Label>
                         
                                 <div class="img1">
                                     <img id="dropdown" src="images/Admin/dropdown-arrow.png"/>
@@ -81,8 +87,8 @@
 
 
 
-
-                                <button onclick="myFunction1()" class="dropbtn1"></button>
+                                <input type="button" class="dropbtn1" onclick="myFunction1()"/>
+                                <%--<button onclick="myFunction1()" class="dropbtn1"></button>--%>
                                 <script type="text/javascript" src="js/dropdown1.js"></script>
                                 <div id="myDropdown1" class="dropdown-content1">
                                     <p>You have New Notifications</p>
@@ -122,9 +128,9 @@
                                     <a href="#">
                                         <img src="images/Admin/settings.png" class="settings"/>
                                         <span class="logout1">Settings</span></a>
-                                    <a href="#" class="logout">
+                                    <a href="#" class="logout" style="padding: 0px 0px;">
                                         <img src="images/Admin/poweroff.png" class="poweroff"/>
-                                        <asp:Button ID="Button3" class="logout1" runat="server" Text="Logout" OnClick="Button3_Click"/>                                        
+                                        <asp:Button ID="Button3" class="logout-button" runat="server" Text="Logout" OnClick="Button3_Click"/></a>                                       
                                 </div>
                         </div>
 
@@ -147,17 +153,17 @@
     <div id="productform">
         <div id="formdetails">
             <h2>Product Name</h2>
-            <asp:TextBox ID="TextBox1" runat="server" class="productname" placeholder="Enter Product..."></asp:TextBox>            
+            <asp:TextBox ID="TextBox1" runat="server" class="productname" placeholder="Enter Product..." autocomplete="off"></asp:TextBox>            
 <br/><br/>
             <h2>Product Description</h2>
-            <asp:TextBox ID="TextBox2" class="productdescription" placeholder="Enter description..." runat="server" TextMode="MultiLine"></asp:TextBox>            
+            <asp:TextBox ID="TextBox2" class="productdescription" placeholder="Enter description..." runat="server" TextMode="MultiLine" autocomplete="off"></asp:TextBox>            
 
 <br><br>
             <h2>Product Price</h2>
-            <asp:TextBox ID="TextBox3" runat="server" class="productprice"></asp:TextBox>            
+            <asp:TextBox ID="TextBox3" runat="server" class="productprice" autocomplete="off"></asp:TextBox>            
 <br><br>
             <h2>Product Quantity</h2>
-            <asp:TextBox ID="TextBox4" class="productquantity" runat="server"></asp:TextBox>            
+            <asp:TextBox ID="TextBox4" class="productquantity" runat="server" autocomplete="off"></asp:TextBox>            
 <br><br>
             <h2>Product Category</h2>
             <asp:DropDownList ID="DropDownList1" class="productcategory" runat="server"></asp:DropDownList>           
@@ -165,17 +171,21 @@
 
             <div class="product-image">
                 <h2>Product Image</h2>
-                <asp:Image ID="Image1" runat="server" Height="120px" Width="118px" class="img-pho" style="width: 64px;height: 75px;"/>                
+                <asp:Image ID="Image1" runat="server" class="img-pho" style="width: 350px;height: 375px; border: 1px solid black;"/>                
                 <asp:FileUpload ID="FileUpload1" runat="server" />
                 <asp:Label ID="Label1" runat="server"></asp:Label>        <br />
                 <asp:Button ID="Button1" runat="server" Text="Upload" class="productsubmit" OnClick="Button1_Click"/>                
             </div>                   
               
             <div class="container">
-                <asp:Button ID="Button2" class="butn butn1" runat="server" Text="Insert Product" OnClick="Button2_Click"/>                  
+                <asp:Button ID="Button2" class="butn" runat="server" Text="INSERT PRODUCT" OnClick="Button2_Click"/> 
+                
             </div>
 
-        </div>
+            <div class="container1">
+                <input type="reset" value="RESET" class="butnA" /> 
+                
+            </div>
     </div>
 </section>
 <!--FORM ENDS HERE-->
@@ -186,9 +196,10 @@
 <!--FOOTER STARTS HERE-->
 <footer>
     <p>Copyrights © DailyShopping, created in 2020</p>
-    <button class="btnScrollToTop">
+    <div class="btnScrollToTop clickTop">
         <img src="images/Admin/uparrow.png" id="uparrow"/>
-    </button>
+       
+    </div>
 
     <script src="js/scrolltop.js"></script>
 </footer>

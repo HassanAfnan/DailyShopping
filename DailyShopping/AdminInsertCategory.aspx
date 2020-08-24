@@ -21,22 +21,27 @@
         <div class="sidebar-container">
 
             <div class="sidebar-header">
-                <img src="images/Admin/admin.png" id="admin"/>
+                <img src="images/Admin/admin.png" class="admin"/>
                 <h4>ADMIN</h4>
             </div>
 
             <nav class="menu">
                 
                 <ul class="sidebar-menu">
-                    <li><a href="AdminHome.aspx">Dashboard</a></li>
-                    <li><a href="Items Manager.html">Items Manager</a></li>
+                    <li>
+                        
+                        <a href="AdminHome.aspx">Dashboard</a>
+                    </li>
+                    <li><a href="AdminSeeAllProducts.aspx">Items Manager</a></li>
+                    
                     <li class="active"><a href="AdminInsertCategory.aspx">Category</a></li>
                     <li><a href="AdminInsertProduct.aspx">Product</a></li>
+                    <li><a href="AdminLogin.aspx">Admin Register</a></li>
                 </ul>
             
 
                 <div class="sidebar-footer">
-                    <img src="images/Admin/mainicon.png" id="mainicon"/>
+                    <img src="images/Admin/mainicon.png" class="mainicon"/>
                 </div>
             </nav>
 
@@ -65,23 +70,24 @@
 
                 <li class="profile-drop">
                     <div class="newdiv">
-                        <button onclick="myFunction()" class="dropbtn"></button>
+                        <input type="button" class="dropbtn" onclick="myFunction()"/>
+                        <%--<button onclick="myFunction()" class="dropbtn"></button>--%>
                         
                         <script type="text/javascript" src="js/dropdown.js"></script>
                                                            
-                                <div class="img">
-                                    <img id="face" src="images/Admin/face.jpg"/>
-                                </div>
-                                <span class="name">John Doe</span>
+                                 <div class="img">
+                                    <img id="face" src="images/Admin/admin.png"/>
+                                </div> 
+                             <asp:Label ID="Label1" runat="server" class="name"></asp:Label>
                         
-                                <div class="img1">
+                              <div class="img1">
                                     <img id="dropdown" src="images/Admin/dropdown-arrow.png"/>
                                 </div>
                        
 
 
-
-                                <button onclick="myFunction1()" class="dropbtn1"></button>
+                                <input type="button" class="dropbtn1" onclick="myFunction1()"/>
+                                <%--<button onclick="myFunction1()" class="dropbtn1"></button>--%>
                                 <script type="text/javascript" src="js/dropdown1.js"></script>
                                 <div id="myDropdown1" class="dropdown-content1">
                                     <p>You have New Notifications</p>
@@ -121,9 +127,9 @@
                                     <a href="#">
                                         <img src="images/Admin/settings.png" class="settings"/>
                                         <span class="logout1">Settings</span></a>
-                                    <a href="AdminLogin.html" class="logout">
+                                    <a href="#" class="logout" style="padding: 0px 0px;">
                                         <img src="images/Admin/poweroff.png" class="poweroff"/>
-                                        <span class="logout1">Logout</span></a>
+                                        <asp:Button ID="Button3" class="logout-button" runat="server" Text="Logout" OnClick="Button3_Click"/></a> 
                                 </div>
                         </div>
 
@@ -146,16 +152,18 @@
     <div id="productform">
         <div id="formdetails">
             
-            <asp:TextBox ID="TextBox1" runat="server" class="category" placeholder="Enter New Category"></asp:TextBox>            
+            <asp:TextBox ID="TextBox1" runat="server" class="category" placeholder="Enter new category..." autocomplete="off"></asp:TextBox>            
 
             <div class="present-categories">
                 <h2>Present categories</h2>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataKeyNames="Cid" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical">
+                <div class="category-list">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataKeyNames="Cid" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical" class="table">
                     <AlternatingRowStyle BackColor="#CCCCCC" />
                     <Columns>
-                        <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                        
                         <asp:BoundField DataField="Cid" HeaderText="Cid" InsertVisible="False" ReadOnly="True" SortExpression="Cid" />
-                        <asp:BoundField DataField="CategoryName" HeaderText="CategoryName" SortExpression="CategoryName" />
+                        <asp:BoundField DataField="CategoryName" HeaderText="Category Name" SortExpression="CategoryName" />
+                        <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" HeaderText="Operation" />
                     </Columns>
                     <FooterStyle BackColor="#CCCCCC" />
                     <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
@@ -166,6 +174,7 @@
                     <SortedDescendingCellStyle BackColor="#CAC9C9" />
                     <SortedDescendingHeaderStyle BackColor="#383838" />
                 </asp:GridView>
+                    </div>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:DailyShopping %>" DeleteCommand="DELETE FROM [Category] WHERE [Cid] = @original_Cid AND (([CategoryName] = @original_CategoryName) OR ([CategoryName] IS NULL AND @original_CategoryName IS NULL))" InsertCommand="INSERT INTO [Category] ([CategoryName]) VALUES (@CategoryName)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Category]" UpdateCommand="UPDATE [Category] SET [CategoryName] = @CategoryName WHERE [Cid] = @original_Cid AND (([CategoryName] = @original_CategoryName) OR ([CategoryName] IS NULL AND @original_CategoryName IS NULL))">
                     <DeleteParameters>
                         <asp:Parameter Name="original_Cid" Type="Int32" />
@@ -183,7 +192,7 @@
             </div>
 
             <div class="container">
-                <asp:Button ID="Button1" class="butn butn1" runat="server" Text="Insert Category" OnClick="Button1_Click" />                
+                <asp:Button ID="Button1" class="butn butn1" runat="server" Text="INSERT CATEGORY" OnClick="Button1_Click" />                
             </div>                  
         </div>
     </div>
@@ -196,9 +205,9 @@
 <!--FOOTER STARTS HERE-->
 <footer>
     <p>Copyrights © DailyShopping, created in 2020</p>
-    <button class="btnScrollToTop">
+    <div class="btnScrollToTop clickTop">
         <img src="images/Admin/uparrow.png" id="uparrow"/>
-    </button>
+    </div>
 
     <script src="js/scrolltop.js"></script>
 </footer>

@@ -17,7 +17,10 @@ namespace DailyShopping
             }
             else
             {
-                //Label1.Text = "welcome user " + Session["userinfo"].ToString();                
+                Models.Admin ad = new Models.Admin();
+                string em = Session["AdminInfo"].ToString();
+                string returned_name = ad.GetAdminName(em);
+                Label1.Text = returned_name;
             }
         }
 
@@ -31,6 +34,12 @@ namespace DailyShopping
             Response.Write("<script>alert('Successfully Inserted Category')</script>");
             //Response.Redirect("AdminHome.aspx");
             ct.ClearTextbox(TextBox1);            
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Login.aspx");
         }
     }
 }
